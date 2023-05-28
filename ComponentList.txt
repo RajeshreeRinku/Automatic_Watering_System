@@ -6,4 +6,5 @@ AC power Supply
 SIM Card
 GSM module
 1 Led(To show pump is ON)
+1 LDR
 
