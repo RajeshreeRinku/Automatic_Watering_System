@@ -1,10 +1,10 @@
-1 Microcontroller
+1 Microcontroller(ATmega328P)
 1 Relay
 AC power Supply
 1 Water Level Sensor
 1 Water Pump
 SIM Card
-GSM module
+GSM module(SIM900A)
 1 Led(To show pump is ON)
 1 LDR
-
+1 RTC(DS32321)
