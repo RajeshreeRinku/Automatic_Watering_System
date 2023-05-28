@@ -1,0 +1,9 @@
+1 Microcontroller
+1 Relay
+AC power Supply
+1 Water Level Sensor
+1 Water Pump
+SIM Card
+GSM module
+1 Led(To show pump is ON)
+
