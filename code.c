@@ -8,6 +8,7 @@
 #include <xc.h>
 
 void ADC_Init();
+int ADC_Conversion(void);
 
 int main(void)
 {
@@ -22,4 +23,13 @@ void ADC_Init()
 {
 	ADMUX=0;
 	ADCSRA=0x80;
+}
+int ADC_Conversion(void)
+{
+ int data;
+ ADCSRA |=(1<<6);                             //Start Conversion
+ while((ADCSRA&(1<<6))!=0);                   //Waiting for conversion to complete
+ data=ADCL;
+ data+=(ADCH<<8);                             // Receive Converted Data
+ return data;
 }
